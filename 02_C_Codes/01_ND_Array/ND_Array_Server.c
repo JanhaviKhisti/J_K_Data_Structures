@@ -1,4 +1,11 @@
 
+/**
+ * @File: ND_Array_Server.c
+ * @Brief: This file contains function definitions for N-Dimensional Array
+ * @Author: Janhavi Khisti(janhavikhisti@gmail.com)
+ * @Date: 08/01/2024 (Monday)
+ */
+
 // Headers
 #include <stdio.h>
 #include <stdlib.h>
