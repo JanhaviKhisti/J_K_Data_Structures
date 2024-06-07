@@ -38,6 +38,8 @@
 
 #define MAX 6
 
+int var;
+
 p_array_t my_4Darray = NULL;
 p_array_t my_8Darray = NULL;
 p_array_t my_16Darray = NULL;
@@ -74,7 +76,7 @@ int main(void)
 									index4);
 
 	fprintf(stdout, "\n*************************************************************************\n");
-	/*fprintf(stdout, "\n4D Array:\n");
+	fprintf(stdout, "\n4D Array:\n");
 	for( long index1 = 0; index1 < array_get_size_of_dimension(my_4Darray, 0); ++index1 )
 		for( long index2 = 0; index2 < array_get_size_of_dimension(my_4Darray, 1); ++index2 )
 			for( long index3 = 0; index3 < array_get_size_of_dimension(my_4Darray, 2); ++index3)
@@ -88,12 +90,12 @@ int main(void)
 																index1, 
 																index2, 
 																index3, 
-																index4));*/
+																index4));
 
 	fprintf(stdout," First Element of 4D array = %lld\n", (long long)array_get_data(my_4Darray, 0, 0, 0, 0) );
 	fprintf(stdout," Last Element of 4D array = %lld\n", (long long)array_get_data(my_4Darray, 5, 5, 5, 5) );
 
-	fprintf(stdout, "\n*************************************************************************\n\n\n\n\n");
+	fprintf(stdout, "\n*************************************************************************\n\n\n\n");
 	array_destroy( &my_4Darray );
 
 
@@ -135,7 +137,7 @@ int main(void)
 													index8);
 
 	fprintf(stdout, "\n*************************************************************************\n");
-	/*fprintf(stdout, "\n8D Array:\n");
+	fprintf(stdout, "\n8D Array:\n");
 	for( long index1 = 0; index1 < array_get_size_of_dimension(my_8Darray, 0); ++index1 )
 		for( long index2 = 0; index2 < array_get_size_of_dimension(my_8Darray, 1); ++index2 )
 			for( long index3 = 0; index3 < array_get_size_of_dimension(my_8Darray, 2); ++index3)
@@ -161,12 +163,12 @@ int main(void)
 																index5, 
 																index6, 
 																index7, 
-																index8));*/
+																index8));
 
 	fprintf(stdout," First Element of 8D array = %lld\n", (long long)array_get_data(my_8Darray, 0, 0, 0, 0, 0, 0, 0, 0) );
 	fprintf(stdout," Last Element of 8D array = %lld\n", (long long)array_get_data(my_8Darray, 3, 3, 3, 3, 3, 3, 3, 3) );
 
-	fprintf(stdout, "\n*************************************************************************\n\n\n\n\n");
+	fprintf(stdout, "\n*************************************************************************\n\n");
 	array_destroy( &my_8Darray );
 					
 
@@ -216,41 +218,41 @@ int main(void)
 																	index15, index16);
 	// Read Value
 	fprintf(stdout, "\n*************************************************************************\n");
-	/*fprintf(stdout, "\n16D Array:\n");
-	for( long index1 = 0; index1 < array_get_size_of_dimension(my_16Darray, 0); ++index1 )
-		for( long index2 = 0; index2 < array_get_size_of_dimension(my_16Darray, 1); ++index2 )
-			for( long index3 = 0; index3 < array_get_size_of_dimension(my_16Darray, 2); ++index3)
-				for( long index4 = 0; index4 < array_get_size_of_dimension(my_16Darray, 3); ++index4)
-					for( long index5 = 0; index5 < array_get_size_of_dimension(my_16Darray, 4); ++index5)
-						for( long index6 = 0; index6 < array_get_size_of_dimension(my_16Darray, 5); ++index6)
-							for( long index7 = 0; index7 < array_get_size_of_dimension(my_16Darray, 6); ++index7)
-								for( long index8 = 0; index8 < array_get_size_of_dimension(my_16Darray, 7); ++index8)
-									for( long index9 = 0; index9 < array_get_size_of_dimension(my_16Darray, 8); ++index9)
-										for( long index10 = 0; index10 < array_get_size_of_dimension(my_16Darray, 9); ++index10)
-											for( long index11 = 0; index11 < array_get_size_of_dimension(my_16Darray, 10); ++index11)
-												for( long index12 = 0; index12 < array_get_size_of_dimension(my_16Darray, 11); ++index12)
-													for( long index13 = 0; index13 < array_get_size_of_dimension(my_16Darray, 12); ++index13)
-														for( long index14 = 0; index14 < array_get_size_of_dimension(my_16Darray, 13); ++index14)
-															for( long index15 = 0; index15 < array_get_size_of_dimension(my_16Darray, 14); ++index15)
-																for( long index16 = 0; index16 < array_get_size_of_dimension(my_16Darray, 15); ++index16)	
-													fprintf( stdout, 	" my_16Darray[%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d] = %lld\n", 
-																		index1, index2,
-																		index3, index4,
-																		index5, index6,
-																		index7, index8,
-																		index9, index10,
-																		index11, index12,
-																		index13, index14,
-																		index15, index16,
-																		(size_t)array_get_data(	my_16Darray, 
-																								index1, index2, 
-																								index3, index4, 
-																								index5, index6, 
-																								index7, index8, 
-																								index9, index10, 
-																								index11, index12,
-																								index13, index14,
-																								index15, index16) );*/
+	// fprintf(stdout, "\n16D Array:\n");
+	// for( long index1 = 0; index1 < array_get_size_of_dimension(my_16Darray, 0); ++index1 )
+	// 	for( long index2 = 0; index2 < array_get_size_of_dimension(my_16Darray, 1); ++index2 )
+	// 		for( long index3 = 0; index3 < array_get_size_of_dimension(my_16Darray, 2); ++index3)
+	// 			for( long index4 = 0; index4 < array_get_size_of_dimension(my_16Darray, 3); ++index4)
+	// 				for( long index5 = 0; index5 < array_get_size_of_dimension(my_16Darray, 4); ++index5)
+	// 					for( long index6 = 0; index6 < array_get_size_of_dimension(my_16Darray, 5); ++index6)
+	// 						for( long index7 = 0; index7 < array_get_size_of_dimension(my_16Darray, 6); ++index7)
+	// 							for( long index8 = 0; index8 < array_get_size_of_dimension(my_16Darray, 7); ++index8)
+	// 								for( long index9 = 0; index9 < array_get_size_of_dimension(my_16Darray, 8); ++index9)
+	// 									for( long index10 = 0; index10 < array_get_size_of_dimension(my_16Darray, 9); ++index10)
+	// 										for( long index11 = 0; index11 < array_get_size_of_dimension(my_16Darray, 10); ++index11)
+	// 											for( long index12 = 0; index12 < array_get_size_of_dimension(my_16Darray, 11); ++index12)
+	// 												for( long index13 = 0; index13 < array_get_size_of_dimension(my_16Darray, 12); ++index13)
+	// 													for( long index14 = 0; index14 < array_get_size_of_dimension(my_16Darray, 13); ++index14)
+	// 														for( long index15 = 0; index15 < array_get_size_of_dimension(my_16Darray, 14); ++index15)
+	// 															for( long index16 = 0; index16 < array_get_size_of_dimension(my_16Darray, 15); ++index16)	
+	// 												fprintf( stdout, 	" my_16Darray[%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d][%d] = %lld\n", 
+	// 																	index1, index2,
+	// 																	index3, index4,
+	// 																	index5, index6,
+	// 																	index7, index8,
+	// 																	index9, index10,
+	// 																	index11, index12,
+	// 																	index13, index14,
+	// 																	index15, index16,
+	// 																	(size_t)array_get_data(	my_16Darray, 
+	// 																							index1, index2, 
+	// 																							index3, index4, 
+	// 																							index5, index6, 
+	// 																							index7, index8, 
+	// 																							index9, index10, 
+	// 																							index11, index12,
+	// 																							index13, index14,
+	// 																							index15, index16) );
 	
 
 
@@ -273,12 +275,23 @@ int main(void)
 																		NO_OF_1D_ARRAY-1, 
 																		NO_OF_ELEMENTS-1)); 
 
-	fprintf(stdout, "\n*************************************************************************\n\n\n\n\n");
+	fprintf(stdout, "\n*************************************************************************\n\n\n");
 
+	printf("Please enter 0 to exit code : ");
+	scanf("%d", &var);
+
+	if( 0 == var)
+	{
 	// Destroy Array
 	array_destroy( &my_16Darray );
 
 	exit(SUCCESS);
+	}
+	else
+	{
+		printf("Enter 0 to exit code...\n\n");
+
+	}
 		
 }
  

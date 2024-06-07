@@ -1,7 +1,4 @@
 
-Directory : 
-			D:\AB_DS Batch 1\Git Codes\AB_DS_Janhavi_Khisti\01_C_Datastructures\01_ND_Array_Version1\01_ClassCode
-
 Files : 1) ND_Array.h
 	2) ND_Array_Server.c
 	3) ND_Array_Client.c
