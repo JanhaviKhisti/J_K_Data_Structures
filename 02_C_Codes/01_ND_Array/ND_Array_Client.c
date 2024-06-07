@@ -1,8 +1,4 @@
 
-/*
-	Total lines of code = (header)81 + (server)352 + (client)277 = 710 
-*/
-
 /**
  * @File: ND_Array_Client.c
  * @Brief: This file contains function calls to demonstrates N-Dimensional Array
@@ -296,5 +292,4 @@ int main(void)
 		
 }
  
-
 
