@@ -2,8 +2,8 @@
 /**
  * @File: ND_Array.h
  * @Brief: Header file contains function declarations as well as type definitions
- * @Author: Janhavi Khisti(janhavikhisti@gmail.com)
- * @Date: 08/01/2024 (Monday)
+ * @Author: Janhavi Sunil Khisti(janhavikhisti@gmail.com)
+ * @Date: 07/06/2024 (Monday)
  */
 
 #ifndef _ND_ARRAY_H

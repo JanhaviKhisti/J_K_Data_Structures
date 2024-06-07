@@ -5,8 +5,8 @@
 /**
  * @File: ND_Array_Client.c
  * @Brief: This file contains function calls to demonstrates N-Dimensional Array
- * @Author: Janhavi Khisti(janhavikhisti@gmail.com)
- * @Date: 08/01/2024 (Monday)
+ * @Author: Janhavi Sunil Khisti(janhavikhisti@gmail.com)
+ * @Date: 07/06/2024 (Monday)
  */
 
 // Headers
